@@ -49,17 +49,16 @@ export default function Header() {
 
           {/* Right Content */}
           <div className="mt-12 md:mt-0">
-            <div className="relative w-6 h-64 md:w-96 md:h-96">
-<Image
-  src="/image/amit.jpeg" // Note the leading slash for public folder
-  alt="Profile Image"
-  width={200} // Adjust as needed
-  height={200} // Adjust as needed
-  className="rounded-full w-full h-full object-cover shadow-lg"
-/>
+            <div className="relative w-64 h-64 sm:w-64 sm:h-64 md:w-96 md:h-96">
+  <Image
+    src="/image/amit.jpeg"
+    alt="Profile Image"
+    fill
+    className="rounded-full object-cover shadow-lg"
+  />
+  <div className="absolute inset-0 rounded-full bg-purple-100 blur-2xl opacity-50 -z-10"></div>
+</div>
 
-              <div className="absolute inset-0 rounded-full bg-purple-100 blur-2xl opacity-50 -z-10"></div>
-            </div>
           </div>
         </div>
       </div>
